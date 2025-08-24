@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game - Nischal Acharya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./memoryGame.css">
+</head>
+<body>
+    <header>
+        <h1>Memory Game</h1>
+        <p class="subtitle">Match pairs of icons to win!</p>
+        
+        <div class="game-info">
+            <div class="info-item">
+                <span class="info-label">MOVES</span>
+                <span class="info-value" id="moves">0</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">TIME</span>
+                <span class="info-value" id="time">00:00</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="game-container">
+        <div class="grid" id="grid"></div>
+    </div>
+    
+    <div class="controls">
+        <button id="restart">
+            <i class="fas fa-redo"></i> Restart Game
+        </button>
+    </div>
+    
+    <div class="win-message" id="win">
+        <div class="win-content">
+            <h2>Congratulations!</h2>
+            <p>You've matched all the pairs!</p>
+            
+            <div class="win-stats">
+                <div class="win-stat">
+                    <div class="win-stat-value" id="finalMoves">0</div>
+                    <div class="win-stat-label">Moves</div>
+                </div>
+                <div class="win-stat">
+                    <div class="win-stat-value" id="finalTime">00:00</div>
+                    <div class="win-stat-label">Time</div>
+                </div>
+            </div>
+            
+            <button id="again">
+                <i class="fas fa-play"></i> Play Again
+            </button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Created by Nischal Acharya • Memory Game</p>
+    </div>
+
+    <script src="./memorygame.js"></script>
+</body>
+</html>
